@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/repo/',
+  base: '/myvitepress/',
   title: "My Awesome Project",
   description: "A VitePress Site",
   themeConfig: {
