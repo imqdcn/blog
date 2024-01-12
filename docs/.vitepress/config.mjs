@@ -8,7 +8,7 @@ export default defineConfig({
   title: "我的vitepress博客",
   description: "一个基于vitepress的静态站点，使用markdown编写",
   lastUpdated: true,// 显示最后更新时间
-  
+  ignoreDeadLinks: true,//忽略死链查询
   themeConfig: {
     logo: "https://vitepress.dev/vitepress-logo-mini.svg",
     // 无效，不知道怎么用
