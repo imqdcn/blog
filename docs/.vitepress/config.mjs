@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/myvitepress/',
+  base: '/blog/',
   title: "我的vitepress博客",
   description: "一个基于vitepress的静态站点，使用markdown编写",
   lastUpdated: true,// 显示最后更新时间
