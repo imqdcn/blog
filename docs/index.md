@@ -6,6 +6,9 @@ hero:
   name: "My Awesome Project"
   text: "A VitePress Site"
   tagline: My great project tagline
+  image:
+    src: "https://vitepress.dev/vitepress-logo-large.webp"
+    alt: VitePress
   actions:
     - theme: brand
       text: Markdown Examples
@@ -17,6 +20,7 @@ hero:
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /api-examples
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
