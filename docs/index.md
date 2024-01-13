@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "前端三评的技术博客"
+  text: "专注于前端开发、前沿技术、工作学习笔记"
+  tagline: "同步到公众号imqdcnn"
   image:
     src: "https://vitepress.dev/vitepress-logo-large.webp"
     alt: VitePress
