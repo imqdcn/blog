@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "前端三评的技术博客"
+  name: "WEB前端圈的技术博客"
   text: "专注于前端开发、前沿技术、工作学习笔记"
   tagline: "将同步到公众号imqdcnn，欢迎关注"
   image:
@@ -11,11 +11,11 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 前端开发笔记
+      link: /WebFront/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: AI笔记
+      link: /AI/
 
 features:
   - title: imqd主站点

@@ -1,0 +1,16 @@
+[
+  {
+    "text": "学习",
+    "items": [
+      {
+        "text": "技能学习",
+        "link": "/study/"
+      },
+      {
+        "text": "从0开始部署vitepress",
+        "link": "/study/vitepress"
+      }
+    ],
+    "collapsed": true
+  }
+]
