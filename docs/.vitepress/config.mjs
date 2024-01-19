@@ -84,7 +84,7 @@ export default defineConfig({
     ],
     // 页脚
     footer: {
-      message: '本站为资深前端开发与前端培训罗老师运营，未经许可禁止任何形式的转载',
+      message: '本站为资深前端开发与前端培训罗老师(微信号：imqdcnn)运营，未经许可禁止任何形式的转载',
       copyright: 'Copyright © imqd.cn'
     }
   }
