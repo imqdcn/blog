@@ -1,0 +1,8 @@
+/* .vitepress/theme/custom.css */
+:root {
+    --vp-c-brand-1: #ff8700;
+    --vp-c-brand-2: #ffc107;
+    --vp-c-brand-3: #ffca2c;
+    --vp-c-indigo-soft: rgba(100, 108, 255, 0.14);
+  }
+  

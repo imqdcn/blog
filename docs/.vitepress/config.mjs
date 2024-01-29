@@ -1,75 +1,100 @@
 // import fs from 'fs'
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 // import { VPTeamMembers } from 'vitepress/theme'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  lang: 'zh-CN',
+  lang: "zh-CN",
   // base: '/blog/',
   title: "前端三评",
-  description: "imqdcn的静态站点，专注于前端技术，AI，最新科技，前端罗老师的工作生活笔记",
-  lastUpdated: true,// 显示最后更新时间
-  ignoreDeadLinks: true,//忽略死链查询
+  description:
+    "imqdcn的静态站点，专注于前端技术，AI，最新科技，前端罗老师的工作生活笔记",
+  lastUpdated: true, // 显示最后更新时间
+  ignoreDeadLinks: true, //忽略死链查询
   head: [
-    ['link', { rel: 'icon', href: 'https://www.imqd.cn/wp-content/themes/imqd/images/favicon.ico' }],
-    ['meta', { property: 'og:title', content: 'web前端圈技术博客 | 前端三评' }],
-    ['meta', { property: 'og:description', content: 'web前端开发, 全栈开发, 前端资源' }],
-     // google analytics
-     ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-W6SWK27Q1Z' }],
-     ['script', {}, `window.dataLayer = window.dataLayer || [];
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "https://www.imqd.cn/wp-content/themes/imqd/images/favicon.ico",
+      },
+    ],
+    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ["meta", { property: "og:title", content: "web前端圈技术博客 | 前端三评" }],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content: "web前端开发, 全栈开发, 前端资源",
+      },
+    ],
+    // google analytics
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-W6SWK27Q1Z",
+      },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];
        function gtag(){dataLayer.push(arguments);}
        gtag('js', new Date());
  
-       gtag('config', 'G-W6SWK27Q1Z');`],
+       gtag('config', 'G-W6SWK27Q1Z');`,
+    ],
   ],
   markdown: {
     headers: {
-      level: [0, 5]
-    }
+      level: [0, 1,2,3,4,5],
+    },
+    toc: { level: [1, 2,3,4] },
   },
   themeConfig: {
     logo: "https://vitepress.dev/vitepress-logo-mini.svg",
     search: {
-      provider: 'local'
+      provider: "local",
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
-      { text: '前端开发', link: '/WebFront/' },
-      { text: 'AI', link: '/AI/' },
-      { text: '轻记', link: '/Record/' }
+      { text: "首页", link: "/" },
+      { text: "前端开发", link: "/WebFront/",activeMatch: '/WebFront/' },
+      { text: "AI", link: "/AI/",activeMatch: '/AI/'  },
+      { text: "轻记", link: "/Record/",activeMatch: '/Record/'  },
     ],
     sidebar: {
-      '/WebFront/': { base: '/WebFront/', items: sidebarWebFront() },
-      '/AI/': { base: '/AI/', items: sidebarAI() },
-      '/Record/': { base: '/Record/', items: sidebarRecord() }
+      "/WebFront/": { base: "/WebFront/", items: sidebarWebFront() },
+      "/AI/": { base: "/AI/", items: sidebarAI() },
+      "/Record/": { base: "/Record/", items: sidebarRecord() },
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/imqdcn/blog' }
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/imqdcn/blog" }],
+    outlineTitle: '目录',
     // 页脚
     footer: {
-      message: '前端三评为资深全栈开发与前端培训罗老师(v：imqdcnn)的个人技术博客，未经许可禁止任何形式的转载',
-      copyright: `Copyright © 2016-${new Date().getFullYear()}  imqd.cn`
-    }
-  }
-})
+      message:
+        "前端三评为资深全栈开发与前端培训罗老师(v：imqdcnn)的个人技术博客，未经许可禁止任何形式的转载",
+      copyright: `Copyright © 2016-${new Date().getFullYear()}  imqd.cn`,
+    },
+  },
+});
 // 导入侧边栏目录文件
-import WebFront from '../../public/sidebar/WebFront.js'
-import AI from '../../public/sidebar/AI.js'
-import Record from '../../public/sidebar/Record.js'
+import WebFront from "../../public/sidebar/WebFront.js";
+import AI from "../../public/sidebar/AI.js";
+import Record from "../../public/sidebar/Record.js";
 
-function sidebarWebFront(){
+function sidebarWebFront() {
   // const content = fs.readFileSync('./public/sidebar/WebFront.json', 'utf8').toString()
   // const json = JSON.parse(content)
   // console.log(json)
   return WebFront;
 }
 
-function sidebarAI(){
+function sidebarAI() {
   return AI;
 }
 
-function sidebarRecord(){
+function sidebarRecord() {
   return Record;
 }
