@@ -19,7 +19,9 @@ export default defineConfig({
         href: "https://www.imqd.cn/wp-content/themes/imqd/images/favicon.ico",
       },
     ],
-    ['meta', { name: 'theme-color', content: '#3c8772' }],
+    ['script', {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js'
+    }],
     ["meta", { property: "og:title", content: "web前端圈技术博客 | 前端三评" }],
     [
       "meta",
@@ -47,17 +49,13 @@ export default defineConfig({
     ],
   ],
   markdown: {
-    headers: {
-      level: [0, 1,2,3,4,5],
-    },
-    toc: { level: [1, 2,3,4] },
   },
+  // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
     logo: "https://vitepress.dev/vitepress-logo-mini.svg",
     search: {
       provider: "local",
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
       { text: "前端开发", link: "/WebFront/",activeMatch: '/WebFront/' },
@@ -71,6 +69,7 @@ export default defineConfig({
     },
     socialLinks: [{ icon: "github", link: "https://github.com/imqdcn/blog" }],
     outlineTitle: '目录',
+    outline:[2,3,4], //目录显示级别
     // 页脚
     footer: {
       message:
