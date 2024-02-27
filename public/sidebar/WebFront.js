@@ -4,7 +4,6 @@ export default [
     text: "学习",
     items: [
       { text: "技能学习", link: "/" },
-      { text: "从0开始部署vitepress", link: "vitepress" },
     ],
     collapsed: false,
   },
@@ -44,6 +43,14 @@ export default [
       { text: "29.使用 npm 模块", link: "npm" },
       { text: "30.类型运算", link: "type-operations" },
       { text: "31.react支持", link: "react" },
+    ],
+    collapsed: true,
+  },
+  {
+    base: "/WebFront/vitepress/",
+    text: "vitepress",
+    items: [
+      { text: "从0开始部署vitepress", link: "/" },
     ],
     collapsed: true,
   },

@@ -16,11 +16,11 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "https://www.imqd.cn/wp-content/themes/imqd/images/favicon.ico",
+        href: "/favicon.ico",
       },
     ],
     ['script', {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js'
+      src: '/clipboard.min.js'
     }],
     ["meta", { property: "og:title", content: "web前端圈技术博客 | 前端三评" }],
     [
