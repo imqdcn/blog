@@ -5,7 +5,8 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
-  // base: '/blog/',
+  outDir: "../dist",   // 打包到跟目录下，默认在.vitepress下
+  base: '/',  //如果是二级目录，则需要配置与github仓库名一样的目录，比如blog
   title: "前端三评",
   description:
     "imqdcn的静态站点，专注于前端技术，AI，最新科技，前端罗老师的工作生活笔记",
@@ -16,11 +17,11 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/favicon.ico",
+        href: "https://www.imqd.cn/wp-content/themes/imqd/images/favicon.ico",
       },
     ],
     ['script', {
-      src: '/clipboard.min.js'
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js'
     }],
     ["meta", { property: "og:title", content: "web前端圈技术博客 | 前端三评" }],
     [
@@ -69,11 +70,11 @@ export default defineConfig({
     },
     socialLinks: [{ icon: "github", link: "https://github.com/imqdcn/blog" }],
     outlineTitle: '目录',
-    outline:[2,3,4], //目录显示级别
+    outline:[2,4], //目录显示级别
     // 页脚
     footer: {
       message:
-        "前端三评为资深全栈开发与前端培训罗老师(v：imqdcnn)的个人技术博客，未经许可禁止任何形式的转载",
+        "前端三评为个人技术博客，你可与我联系(v：imqdcnn)，未经许可禁止任何形式的转载",
       copyright: `Copyright © 2016-${new Date().getFullYear()}  imqd.cn`,
     },
   },

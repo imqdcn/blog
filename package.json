@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/imqdcn/blog#readme",
   "devDependencies": {
-    "vitepress": "1.0.0-rc.36"
+    "@mdit-vue/shared": "^2.0.0",
+    "sass": "^1.71.1",
+    "vitepress": "1.0.0-rc.44"
+  },
+  "dependencies": {
+    "element-plus": "^2.5.6"
   }
 }
