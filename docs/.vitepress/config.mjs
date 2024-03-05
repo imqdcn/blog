@@ -5,7 +5,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
-  outDir: "../dist",   // 打包到跟目录下，默认在.vitepress下
+  // outDir: "../dist",   // 打包到跟目录下，默认在.vitepress下
   base: '/',  //如果是二级目录，则需要配置与github仓库名一样的目录，比如blog
   title: "前端三评",
   description:
