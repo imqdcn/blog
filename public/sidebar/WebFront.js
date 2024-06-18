@@ -9,6 +9,16 @@ export default [
     collapsed: false,
   },
   {
+    base: "/WebFront/html+css/",
+    text: "html+css",
+    items: [
+      { text: "01.html基础元素", link: "01.html基础元素" },
+      { text: "02.html表格", link: "02.html表格" },
+      { text: "03.html表单", link: "03.html表单" },
+    ],
+    collapsed: true,
+  },
+  {
     base: "/WebFront/typescript/",
     text: "typescript",
     items: [

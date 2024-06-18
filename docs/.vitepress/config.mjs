@@ -62,13 +62,14 @@ export default defineConfig({
       { text: "前端开发", link: "/WebFront/",activeMatch: '/WebFront/' },
       { text: "AI", link: "/AI/",activeMatch: '/AI/'  },
       { text: "轻记", link: "/Record/",activeMatch: '/Record/'  },
+      { text: "联系我", link: "/contact",activeMatch: '/contact'  },
     ],
     sidebar: {
       "/WebFront/": { base: "/WebFront/", items: sidebarWebFront() },
       "/AI/": { base: "/AI/", items: sidebarAI() },
       "/Record/": { base: "/Record/", items: sidebarRecord() },
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/imqdcn/blog" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/imqdcn" }],
     outlineTitle: '目录',
     outline:[2,4], //目录显示级别
     // 页脚

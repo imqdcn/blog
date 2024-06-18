@@ -26,5 +26,6 @@ features:
     link: "https://blog.csdn.net/imqdcn/"
   - title: 视频教程
     details: "会有长视频（B站）和短视频（视频号、抖音、快手）"
+    link: "/contact"
 ---
 

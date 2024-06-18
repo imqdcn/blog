@@ -60,7 +60,7 @@ const siteData = [
           tags:['框架']
         },
         {
-          icon: "https://www.vueusejs.com/favicon.svg",
+          icon: "http://www.vueusejs.com/favicon.svg",
           name: "VueUse",
           desc: "基于Vue组合式API的实用工具集。该站并非官方文档。原站为（vueuse.org）",
           link: "https://www.vueusejs.com/",
