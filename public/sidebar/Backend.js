@@ -1,0 +1,21 @@
+export default [
+  {
+    link: "/",
+    text: "说明",
+  },
+  {
+    base: "/Backend/strapiv5/",
+    text: "strapi v5",
+    items: [
+      { text: "01.安装", link: "01.安装" },
+      { text: "02.运行", link: "02.运行" },
+      { text: "03.CentOS7安装nodejs18和yarn", link: "03.CentOS7安装nodejs18和yarn" },
+      { text: "04.使用navicat管理数据库", link: "04.使用navicat管理数据库" },
+      { text: "05.常见问题-FAQ", link: "05.常见问题-FAQ" },
+      { text: "06.将界面语言改为中文", link: "06.将界面语言改为中文" },
+      { text: "07.安装插件", link: "07.安装插件" },
+      { text: "08.注册用户表user说明", link: "08.注册用户表user说明" },
+    ],
+    collapsed: true,
+  }
+];
