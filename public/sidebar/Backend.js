@@ -27,5 +27,14 @@ export default [
       { text: "03.使用postman联调API", link: "03.使用postman联调API" },
     ],
     collapsed: true,
+  },
+  {
+    base: "/Backend/appwrite/",
+    text: "appwrite",
+    items: [
+      { text: "01.使用docker在本地安装和开发", link: "01.使用docker在本地安装和开发" },
+      { text: "02.使用postman调试", link: "02.使用postman调试" },
+    ],
+    collapsed: true,
   }
 ];
