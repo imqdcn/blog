@@ -17,5 +17,15 @@ export default [
       { text: "08.注册用户表user说明", link: "08.注册用户表user说明" },
     ],
     collapsed: true,
+  },
+  {
+    base: "/Backend/supabase/",
+    text: "supabase",
+    items: [
+      { text: "01.它是什么", link: "01.它是什么" },
+      { text: "02.简易使用教程", link: "02.简易使用教程" },
+      { text: "03.使用postman联调API", link: "03.使用postman联调API" },
+    ],
+    collapsed: true,
   }
 ];
